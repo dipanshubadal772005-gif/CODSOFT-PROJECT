@@ -1,0 +1,312 @@
+/* ---------- RESET ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* ---------- HEADER ---------- */
+
+header{
+    background:#333;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+.logo h2{
+    font-size:30px;
+}
+
+.logo p{
+    font-size:13px;
+    margin-top:5px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#2196f3;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+    background:#666;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:50px 70px;
+}
+
+.text{
+    width:45%;
+}
+
+.text h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.text p{
+    font-size:20px;
+    line-height:32px;
+    margin-bottom:25px;
+}
+
+.image img{
+    width:350px;
+}
+
+/* ---------- BUTTON ---------- */
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#2196f3;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0d7dd8;
+}
+
+/* ---------- ABOUT ---------- */
+
+.about{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px;
+    background:white;
+}
+
+.about .image img{
+    width:300px;
+}
+
+.content{
+    width:50%;
+}
+
+.content h2{
+    font-size:38px;
+}
+
+.line{
+    width:70px;
+    height:4px;
+    background:#2196f3;
+    margin:12px 0 20px;
+}
+
+.content p{
+    color:#555;
+    line-height:28px;
+    margin-bottom:18px;
+}
+
+/* ---------- COMMON PAGE ---------- */
+
+.page{
+    width:80%;
+    margin:50px auto;
+}
+
+.page h1{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:40px;
+    color:#333;
+}
+
+.page p{
+    font-size:18px;
+    line-height:30px;
+    color:#555;
+    margin-bottom:20px;
+}
+
+/* ---------- CARD ---------- */
+
+.box{
+    background:white;
+    margin:20px 0;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.box h3{
+    color:#2196f3;
+    margin-bottom:10px;
+}
+
+.box p{
+    margin:0;
+}
+
+/* ---------- SKILLS ---------- */
+
+.skill{
+    margin:25px 0;
+}
+
+.skill p{
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.bar{
+    width:100%;
+    height:18px;
+    background:#ddd;
+    border-radius:10px;
+}
+
+.fill{
+    height:18px;
+    background:#2196f3;
+    border-radius:10px;
+}
+
+/* ---------- CONTACT ---------- */
+
+form{
+    width:70%;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:12px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+textarea{
+    height:150px;
+    resize:none;
+}
+
+button{
+    background:#2196f3;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#0d7dd8;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:15px;
+}
+
+.hero,
+.about{
+    flex-direction:column;
+    text-align:center;
+}
+
+.text,
+.content{
+    width:100%;
+}
+
+.image img{
+    width:220px;
+    margin-top:20px;
+}
+
+form{
+    width:90%;
+}
+
+.page{
+    width:90%;
+}
+
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    background:#333;
+    padding:20px;
+    text-align:center;
+    margin-top:50px;
+}
+
+.home-btn{
+    display:inline-block;
+    background:#2196f3;
+    color:white;
+    text-decoration:none;
+    padding:12px 35px;
+    border-radius:5px;
+    font-size:16px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.home-btn:hover{
+    background:#0d7dd8;
+    transform:scale(1.05);
+}
